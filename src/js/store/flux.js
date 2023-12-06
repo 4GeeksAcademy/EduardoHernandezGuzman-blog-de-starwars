@@ -12,6 +12,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
+			],
+			personajes: [
+				{
+					name: "",
+					gender: "",
+					hair_color: "",
+					eye_color: ""
+				}
+				
 			]
 		},
 		actions: {
@@ -23,6 +32,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
+				
+				
 			},
 			changeColor: (index, color) => {
 				//get the store
