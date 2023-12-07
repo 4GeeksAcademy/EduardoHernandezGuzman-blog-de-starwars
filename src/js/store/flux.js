@@ -3,6 +3,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			
 			personajes: [],
+			naves: [],
 
 
 		},
@@ -21,6 +22,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 				fetch("https://swapi.dev/api/people")
             .then((response) => response.json())
             .then((data) => setStore({ personajes: data.results }))
+
+			//Traer a las naves
+			fetch("https://swapi.dev/api/starships")
+            .then((response) => response.json())
+            .then((data) => setStore({ naves: data.results }))
+
+
 
 
 				

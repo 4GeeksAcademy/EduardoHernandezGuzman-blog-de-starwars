@@ -2,11 +2,11 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
-import "../../styles/personajesDetalles.css";
+// import "../../styles/personajesDetalles.css";
 import img800x600 from "../../img/800x600.jpg";
 
 
-export const PersonajeDetalle = () => {
+export const NaveDetalle = () => {
     const { store, actions } = useContext(Context);
     const params = useParams();
 
@@ -21,9 +21,10 @@ export const PersonajeDetalle = () => {
                     </div>
                     
                     <div className="col-4 informacionPersonaje">
-                        <h2>{store.personajes[params.personaje].name}</h2>
+                        <h2>{store.naves[params.nave].name}</h2>
                         <p>
-                            El enigmático ser que surca las galaxias, forjado por la dualidad del bien y el mal, despierta la admiración de muchos. Sus decisiones moldean destinos y desatan épicas batallas, sumergiéndonos en un torbellino de emociones. Su legado trasciende límites, siendo tanto héroe como villano, cautivando con una historia que despierta la fuerza en cada uno de nosotros.</p>
+                            
+En la vastedad del cosmos, una nave surca los límites del espacio, uniendo mundos y desafiando la gravedad con su presencia majestuosa. Su aerodinámico diseño despierta la admiración de quienes la contemplan, evocando historias de valentía y aventura en cada travesía. Un símbolo de innovación tecnológica que navega entre estrellas, llevando consigo los susurros de la galaxia y sembrando leyendas en su estela.</p>
                     </div>
 
                     <div className="container-flex text-center">
@@ -42,11 +43,11 @@ export const PersonajeDetalle = () => {
                         <tbody>
                             <tr>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Año de nacimiento</th>
-                                <th scope="col">Género</th>
-                                <th scope="col">Altura</th>
-                                <th scope="col">Color de piel</th>
-                                <th scope="col">Color de ojos</th>
+                                <th scope="col">Modelo</th>
+                                <th scope="col">Clase</th>
+                                <th scope="col">Pasajeros</th>
+                                <th scope="col">Tripulación</th>
+                                <th scope="col">Longitud</th>
                             </tr>
                             <tr>
                                 <td>Lo que sea</td>
@@ -71,6 +72,6 @@ export const PersonajeDetalle = () => {
     );
 };
 
-PersonajeDetalle.propTypes = {
+NaveDetalle.propTypes = {
     match: PropTypes.object
 };
