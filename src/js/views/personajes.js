@@ -30,6 +30,7 @@ const Personajes = () => {
                                 <Link to={"/PersonajeDetalle/" + index}>
                                 <button className="btn btn-outline-primary">Más Info</button>
                                 </Link>
+                                <button onClick={()=> actions.favorito(item.name)} className="btn btn-outline-primary">fav</button>
                             </div>
                         </div>))}
 

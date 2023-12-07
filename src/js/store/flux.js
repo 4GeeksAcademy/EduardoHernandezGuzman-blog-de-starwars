@@ -5,11 +5,33 @@ const getState = ({ getStore, getActions, setStore }) => {
 			personajes: [],
 			naves: [],
 			planetas: [],
+			fav:[],
+			mensaje:"",
 
 
 		},
 
 		actions: {
+
+
+
+			favorito: (nombreFav) => {
+				
+				const store = getStore();
+
+				if(store.fav.includes(nombreFav)){
+					console.log("Ya está en la lista")
+				}
+				else {
+					setStore({ fav: [... store.fav , nombreFav] });
+				}
+
+				
+
+			},
+
+
+
 			// // Use getActions to call a function within a fuction
 			// exampleFunction: () => {
 			// 	getActions().changeColor(0, "green");
@@ -34,11 +56,14 @@ const getState = ({ getStore, getActions, setStore }) => {
             .then((response) => response.json())
             .then((data) => setStore({ planetas: data.results }))
 
+		},
 
 
-
-				
+		exampleFunction: () => {
+				getActions().changeColor(0, "green");
 			},
+
+
 			// changeColor: (index, color) => {
 			// 	//get the store
 			// 	const store = getStore();
