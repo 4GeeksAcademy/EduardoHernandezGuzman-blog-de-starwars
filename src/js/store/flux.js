@@ -20,7 +20,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const store = getStore();
 
 				if(store.fav.includes(nombreFav)){
-					console.log("Ya está en la lista")
+					setStore({ fav: store.fav.filter((repetido)=> repetido != nombreFav ) });
 				}
 				else {
 					setStore({ fav: [... store.fav , nombreFav] });
