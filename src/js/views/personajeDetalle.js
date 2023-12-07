@@ -49,12 +49,12 @@ export const PersonajeDetalle = () => {
                                 <th scope="col">Color de ojos</th>
                             </tr>
                             <tr>
-                                <td>Lo que sea</td>
-                                <td>Lo que sea</td>
-                                <td>Lo que sea</td>
-                                <td>Lo que sea</td>
-                                <td>Lo que sea</td>
-                                <td>Lo que sea</td>
+                                <td>{store.personajes[params.personaje].name}</td>
+                                <td>{store.personajes[params.personaje].birth_year}</td>
+                                <td>{store.personajes[params.personaje].gender}</td>
+                                <td>{store.personajes[params.personaje].height}</td>
+                                <td>{store.personajes[params.personaje].skin_color}</td>
+                                <td>{store.personajes[params.personaje].eye_color}</td>
                             </tr>
 
 

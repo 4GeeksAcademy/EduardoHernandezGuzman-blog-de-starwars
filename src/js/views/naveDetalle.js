@@ -47,15 +47,15 @@ En la vastedad del cosmos, una nave surca los límites del espacio, uniendo mund
                                 <th scope="col">Clase</th>
                                 <th scope="col">Pasajeros</th>
                                 <th scope="col">Tripulación</th>
-                                <th scope="col">Longitud</th>
+                                <th scope="col">Máxima velocidad</th>
                             </tr>
                             <tr>
-                                <td>Lo que sea</td>
-                                <td>Lo que sea</td>
-                                <td>Lo que sea</td>
-                                <td>Lo que sea</td>
-                                <td>Lo que sea</td>
-                                <td>Lo que sea</td>
+                                <td>{store.naves[params.nave].name}</td>
+                                <td>{store.naves[params.nave].model}</td>
+                                <td>{store.naves[params.nave].starship_class}</td>
+                                <td>{store.naves[params.nave].passengers}</td>
+                                <td>{store.naves[params.nave].crew}</td>
+                                <td>{store.naves[params.nave].max_atmosphering_speed}</td>
                             </tr>
 
 
