@@ -6,7 +6,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			naves: [],
 			planetas: [],
 			fav:[],
-			mensaje:"",
+			
 
 
 		},
