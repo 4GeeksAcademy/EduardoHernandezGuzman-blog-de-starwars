@@ -1,0 +1,14 @@
+.imagenDetalle {
+    height: 20rem;
+    width: 30rem;
+}
+
+.informacionPersonaje {
+    text-align: left;
+    margin-left: -3rem;
+    margin-bottom: 6rem;
+}
+
+.tablaPersonaje {
+    margin: 5rem;
+}

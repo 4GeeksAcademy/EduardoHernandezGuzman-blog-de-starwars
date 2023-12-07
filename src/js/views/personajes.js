@@ -15,7 +15,7 @@ const Personajes = () => {
 
         <>
             <div>
-                <h2>Characters</h2>
+                <h2 className="tituloPersonajes">Characters</h2>
 
                 <div className=" contenedorPersonajes">
 
