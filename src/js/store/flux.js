@@ -30,6 +30,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			},
 
+			corazonColor: name => {
+                const store = getStore();
+                return store.fav.includes(name);
+            },
+
+
 
 
 			// // Use getActions to call a function within a fuction
