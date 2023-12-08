@@ -5,21 +5,20 @@ import { Context } from "../store/appContext";
 import "../../styles/tarjetasDetalles.css";
 import img800x600 from "../../img/800x600.jpg";
 
-
 export const PersonajeDetalle = () => {
+
     const { store, actions } = useContext(Context);
     const params = useParams();
 
     return (
 
         <>
-
             <div className="container-flex text-center general">
                 <div className="row align-items-center">
                     <div className="col-6">
                         <img className="imagenDetalle" src={img800x600}></img>
                     </div>
-                    
+
                     <div className="col-4 informacionPersonaje">
                         <h2>{store.personajes[params.personaje].name}</h2>
                         <p>
@@ -27,42 +26,39 @@ export const PersonajeDetalle = () => {
                     </div>
 
                     <div className="container-flex text-center">
-                    <div className="row align-items-center col-10">
-                    <table class="table tablaPersonaje">
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Año de nacimiento</th>
-                                <th scope="col">Género</th>
-                                <th scope="col">Altura</th>
-                                <th scope="col">Color de piel</th>
-                                <th scope="col">Color de ojos</th>
-                            </tr>
-                            <tr>
-                                <td>{store.personajes[params.personaje].name}</td>
-                                <td>{store.personajes[params.personaje].birth_year}</td>
-                                <td>{store.personajes[params.personaje].gender}</td>
-                                <td>{store.personajes[params.personaje].height}</td>
-                                <td>{store.personajes[params.personaje].skin_color}</td>
-                                <td>{store.personajes[params.personaje].eye_color}</td>
-                            </tr>
-
-
-                        </tbody>
-                    </table>
+                        <div className="row align-items-center col-10">
+                            <table class="table tablaPersonaje">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Año de nacimiento</th>
+                                        <th scope="col">Género</th>
+                                        <th scope="col">Altura</th>
+                                        <th scope="col">Color de piel</th>
+                                        <th scope="col">Color de ojos</th>
+                                    </tr>
+                                    <tr>
+                                        <td>{store.personajes[params.personaje].name}</td>
+                                        <td>{store.personajes[params.personaje].birth_year}</td>
+                                        <td>{store.personajes[params.personaje].gender}</td>
+                                        <td>{store.personajes[params.personaje].height}</td>
+                                        <td>{store.personajes[params.personaje].skin_color}</td>
+                                        <td>{store.personajes[params.personaje].eye_color}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    </div>
-
                 </div>
             </div>
 
