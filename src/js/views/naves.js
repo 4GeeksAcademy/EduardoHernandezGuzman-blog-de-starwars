@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
-import "../../styles/personajes.css";
+import "../../styles/tarjetas.css";
 
 
 const Naves = () => {
@@ -15,7 +15,7 @@ const Naves = () => {
 
         <>
             <div>
-                <h2 className="tituloPersonajes">Naves</h2>
+                <h2 className="tituloPersonajes display-6">Naves</h2>
 
                 <div className=" contenedorPersonajes">
 
@@ -30,7 +30,9 @@ const Naves = () => {
                                 <Link to={"/NaveDetalle/" + index}>
                                 <button className="btn btn-outline-primary">Más Info</button>
                                 </Link>
-                                <button onClick={()=> actions.favorito(item.name)} className="btn btn-outline-primary">fav</button>
+                                <button onClick={()=> actions.favorito(item.name)} className="btn btn-outline-primary botonFav">Añadir <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-heart-fill corazon" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg></button>
                             </div>
                         </div>))}
 

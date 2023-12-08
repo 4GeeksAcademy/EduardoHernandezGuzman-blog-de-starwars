@@ -18,7 +18,7 @@
     color: red;
     margin-bottom: 2rem;
     margin-left: 5rem;
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 .textoPersonajes {
@@ -28,4 +28,12 @@
 
 .botonInfo {
     margin-top: 1rem;
+}
+
+.corazon {
+    color: red;
+}
+
+.botonFav {
+    margin-left: 1rem;
 }

@@ -4,4 +4,21 @@
     left: 0;
     width: 100%;
     z-index: 1000;
+    
 }
+
+.imagenDetalle {
+    height: 30%;
+    width:30%;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.botonFav {
+    margin-right: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+

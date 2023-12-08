@@ -12,7 +12,7 @@ import { PlanetaDetalle } from "./views/planetaDetalle.js";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
-// import { Footer } from "./component/footer";
+import { Footer } from "./component/footer";
 
 
 
@@ -38,7 +38,7 @@ const Layout = () => {
 						<Route path="/NaveDetalle/:nave" element={<NaveDetalle />} />
 						<Route path="/PlanetaDetalle/:planeta" element={<PlanetaDetalle />} />
 					</Routes>
-					{/* <Footer /> */}
+					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>
