@@ -17,9 +17,11 @@ export const Navbar = () => {
 
 			<div>
 				<div className="btn-group botonFav">
+
 					<button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 						Favoritos {store.fav.length}
 					</button>
+
 					<ul className="dropdown-menu">
 						{store.fav.map((item, index) => (
 							<li key={index}>
@@ -27,6 +29,7 @@ export const Navbar = () => {
 							</li>
 						))}
 					</ul>
+					
 				</div>
 			</div>
 			

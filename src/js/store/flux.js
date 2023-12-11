@@ -42,7 +42,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then((response) => response.json())
 					.then((data) => setStore({ naves: data.results }))
 
-				//Traer a laos planetas
+				//Traer a los planetas
 				fetch("https://swapi.dev/api/planets")
 					.then((response) => response.json())
 					.then((data) => setStore({ planetas: data.results }))
